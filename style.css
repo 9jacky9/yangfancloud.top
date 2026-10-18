@@ -49,8 +49,8 @@ a:hover {
   text-decoration: underline;
 }
 
-.cockpit-logo-link, .cockpit-logo-link:visited,
-.top-btn, .top-btn:visited,
+.cockpit-logo-link, .cockpit-logo-link:visited, .cockpit-logo-link:hover,
+.top-btn, .top-btn:visited, .top-btn:hover, .top-btn:focus, .top-btn:active,
 .cockpit-menu-link, .cockpit-menu-link:visited,
 .glacier-footer-item, .glacier-footer-item:visited {
   text-decoration: none;
@@ -148,7 +148,8 @@ a:hover {
 }
 
 /* ================= BUTTONS ================= */
-.top-btn {
+.top-btn,
+a.top-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -161,30 +162,76 @@ a:hover {
   transition: all 0.2s ease;
   cursor: pointer;
   white-space: nowrap;
+  text-decoration: none !important;
 }
 
-.top-btn-glacier {
+.top-btn:hover,
+.top-btn:focus,
+.top-btn:active,
+.top-btn:visited,
+a.top-btn:hover,
+a.top-btn:focus,
+a.top-btn:active,
+a.top-btn:visited {
+  text-decoration: none !important;
+}
+
+/* Primary Button (Glacier / btn-primary) */
+.top-btn-glacier,
+.top-btn-glacier:visited,
+.btn-primary,
+.btn-primary:visited,
+a.top-btn-glacier,
+a.top-btn-glacier:visited,
+a.btn-primary,
+a.btn-primary:visited {
   background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   border: 1px solid #38BDF8;
   box-shadow: 0 4px 18px var(--ice-glow);
+  text-decoration: none !important;
 }
 
-.top-btn-glacier:hover {
+.top-btn-glacier:hover,
+.top-btn-glacier:focus,
+.top-btn-glacier:active,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+a.top-btn-glacier:hover,
+a.top-btn-glacier:focus,
+a.top-btn-glacier:active,
+a.btn-primary:hover,
+a.btn-primary:focus,
+a.btn-primary:active {
   background: linear-gradient(135deg, #0369A1 0%, #0284C7 100%);
+  color: #FFFFFF !important;
   box-shadow: 0 6px 25px rgba(56, 189, 248, 0.4);
   transform: translateY(-2px);
+  text-decoration: none !important;
 }
 
-.top-btn-metal {
+/* Secondary Button (Metal) */
+.top-btn-metal,
+.top-btn-metal:visited,
+a.top-btn-metal,
+a.top-btn-metal:visited {
   background: rgba(226, 232, 240, 0.06);
-  color: var(--metal-silver);
+  color: var(--metal-silver) !important;
   border: 1px solid var(--metal-border);
+  text-decoration: none !important;
 }
 
-.top-btn-metal:hover {
+.top-btn-metal:hover,
+.top-btn-metal:focus,
+.top-btn-metal:active,
+a.top-btn-metal:hover,
+a.top-btn-metal:focus,
+a.top-btn-metal:active {
   background: rgba(226, 232, 240, 0.12);
   border-color: var(--ice-light);
+  color: #FFFFFF !important;
+  text-decoration: none !important;
   transform: translateY(-2px);
 }
 
